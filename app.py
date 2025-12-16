@@ -85,7 +85,7 @@ if st.button("🔍 Prediksi"):
     if prob >= 0.6:
      st.markdown("""
     **🔴 Risiko Tinggi**
-    - Pertimbangkan percepatan proses gudang  
+    - Pertimbangkan percepatan/penambahan waktu proses gudang  
     - Evaluasi perubahan moda pengiriman  
     - Tambahkan buffer waktu pengiriman  
     - Lakukan monitoring secara  intensif
@@ -93,9 +93,10 @@ if st.button("🔍 Prediksi"):
     elif prob >= 0.4:
      st.markdown("""
     **🟠 Risiko Sedang**
-    - Lakukan monitoring berkala  
-    - Pastikan kesiapan armada dan dokumen  
+    - Lakukan monitoring secara berkala  
+    - Pastikan kesiapan armada dan dokumen pengiriman  
     - Koordinasi dengan pihak gudang
+    - Menyiapkan buffer
     """)
     else:
      st.markdown("""
@@ -106,4 +107,5 @@ if st.button("🔍 Prediksi"):
 
     st.write("---")
     st.caption("Prediksi bersifat probabilistik dan digunakan sebagai alat bantu pengambilan keputusan.")
+
 
