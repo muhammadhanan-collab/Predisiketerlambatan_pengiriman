@@ -8,7 +8,7 @@ st.title("🚚 Prediksi Keterlambatan Pengiriman logistik")
 st.write("Aplikasi prediksi risiko keterlambatan pengiriman ekspedisi")
 st.write("Made by M Hamzah Hanan")
 
-@st.cache_resource
+
 def load_model():
     return joblib.load("random_forest_model.pkl")
 
@@ -106,3 +106,4 @@ if st.button("🔍 Prediksi"):
 
     st.write("---")
     st.caption("Prediksi bersifat probabilistik dan digunakan sebagai alat bantu pengambilan keputusan.")
+
